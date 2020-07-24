@@ -1,0 +1,10 @@
+type: object
+properties:
+  id:
+    $ref: ./book_id.yml
+  title:
+    type: string
+    example: my life
+  author:
+    type: string
+    example: Taro

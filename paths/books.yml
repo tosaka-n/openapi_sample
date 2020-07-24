@@ -1,0 +1,13 @@
+get:
+  tags:
+    - book
+  description: 書籍を取得する
+  parameters:
+    - $ref: ../components/parameters/book_id.yml
+  responses:
+    '200':
+      description: 書籍
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/book.yml

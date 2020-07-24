@@ -1,0 +1,23 @@
+components:
+  schemas:
+    StatusResponse:
+      type: object
+      properties:
+        result:
+          type: string
+          example: OK
+    BookList:
+      type: array
+      items:
+        $ref: ../components/schemas/book.yml
+get:
+  tags:
+    - book
+  description: 書籍リストを取得する
+  responses:
+    '200':
+      description: 書籍リスト
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/BookList'

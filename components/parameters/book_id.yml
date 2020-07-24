@@ -1,0 +1,4 @@
+name: id
+in: query
+schema:
+  $ref: ../schemas/book_id.yml

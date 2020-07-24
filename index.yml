@@ -1,0 +1,14 @@
+openapi: 3.0.2
+info:
+  title: OpenAPI Sample
+  description: このAPIはサンプルです
+  version: '1.0'
+tags:
+  - name: book
+    description: 書籍関連エンドポイント
+paths:
+  /books:
+    $ref: ./paths/books_list.yml
+  /books/{bookId}:
+    $ref: ./paths/books.yml
+
